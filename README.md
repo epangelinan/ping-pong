@@ -15,16 +15,20 @@ _1. It can count up to the provided number._
  _Example Output: [1,2]_
 
 _2. Numbers divisible by 3 are replaced with "ping"._
-_Example Input: 17_
-_Example Output: ping_
+_Example Input: 3_
+_Example Output: [1,2,ping]_
 
 _3. Numbers divisible by 5 are replaced with "pong"._
-_Example Input: 17_
-_Example Output: pong_
+_Example Input: 5_
+_Example Output: [1,2,ping,4,pong]_
 
 _4. Numbers divisible by 15 are replaced with "ping-pong"._
-_Example Input: 17_
-_Example Output: ping-pong_
+_Example Input: 15_
+_Example Output: [1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,ping-pong]_
+
+_5. A user should be able to enter a new number and see new results over and over again._
+_Example Input: 15, click the Ping Pong! button, then enter 3 and click the Ping Pong! button again.
+_Example Output: [1,2,ping]_
 
 ## Setup/Installation Requirements
 
