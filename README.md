@@ -15,7 +15,7 @@ _This web application program asks the user to enter a number.  It then returns 
 |It can count up to the provided number.|2|1, 2|
 |Numbers divisible by 3 are replaced with "ping".|3|1, 2, ping|
 |Numbers divisible by 5 are replaced with "pong".|5|1, 2, ping, 4, pong|
-|Numbers divisible by 15 are replaced with "ping-pong".|15|1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong"|
+|Numbers divisible by 15 are replaced with "ping-pong".|15|1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong|
 |User can enter a new number and see new results.|15, click the Ping Pong! button, then enter 3 and click the Ping Pong! button again.|1, 2, ping|
 
 
