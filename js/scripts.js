@@ -2,23 +2,31 @@ $(document).ready(function() {
   $("form#leap-year").submit(function(event) {
     event.preventDefault();
     var numberInput = parseInt($("input#numberInput").val());
-    var result = pingPong(numberInput);
-    //$("#result").text(result);
+    pingPong(numberInput);
+    pingPongNumbers.forEach(function(pingPongNumber) {
+      $(".results").append("<li>" + pingPongNumber + "</li>");
+    });
   });
 });
+
+var pingPongNumbers = [];
 
 var pingPong = function(numberInput) {
   alert(numberInput);
   for (index = 1; index <= numberInput; index++) {
     if (index % 15 === 0) {
-      $(".results").append("<li>" + "ping-pong" + "</li>");
+      pingPongNumbers.push("ping-pong");
+      //$(".results").append("<li>" + "ping-pong" + "</li>");
     } else if (index % 5 === 0) {
-      $(".results").append("<li>" + "pong" + "</li>");
+      pingPongNumbers.push("pong");
+      //$(".results").append("<li>" + "pong" + "</li>");
     } else if (index % 3 === 0) {
-      $(".results").append("<li>" + "ping" + "</li>");
+      pingPongNumbers.push("ping");
+      //$(".results").append("<li>" + "ping" + "</li>");
     }
     else {
-      $(".results").append("<li>" + index + "</li>");
+      pingPongNumbers.push(index);
+      //$(".results").append("<li>" + index + "</li>");
     }
   }
 };
