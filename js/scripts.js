@@ -1,6 +1,5 @@
 // Business logic
 var pingPongNumbers = [];
-
 var pingPong = function(numberInput) {
   //alert(numberInput);
   for (index = 1; index <= numberInput; index++) {
@@ -18,9 +17,8 @@ var pingPong = function(numberInput) {
 };
 
 //User interface logic
-
 $(document).ready(function() {
-  $("form#leap-year").submit(function(event) {
+  $("form#ping-pong").submit(function(event) {
     event.preventDefault();
     $(".indexValue").remove();
     var numberInput = parseInt($("input#numberInput").val());

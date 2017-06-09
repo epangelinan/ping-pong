@@ -9,32 +9,30 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ping Pong</h1>
-      <h2>Let's Play Ping Pong!</h2>
-      <h3>Rules:</h3>
+      <h1 class="jumbotron">Ping-Pong</h1>
+      <h3>Let's Play Ping Pong!</h3>
+      <div class="sidebar">
+        <h4><strong>About Ping Pong</strong></h4>
+        <p>Created by: Esvethlynna Pangelinan</p>
+      </div>
+      <h4>Rules:</h4>
       <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
       <ol>
         <li>Numbers divisible by 3 are replaced with "ping"</li>
         <li>Numbers divisible by 5 are replaced with "pong"</li>
         <li>Numbers divisible by 15 are replaced with "ping-pong"</li>
       </ol>
-      <form id="leap-year">
+      <form id="ping-pong">
         <div class="form-group">
           <label for="number">Enter your number here:</label>
-          <input id="numberInput" type="text">
+          <input id="numberInput" type="text"><button type="submit" class="btn">Ping Pong!</button>
         </div>
 
-        <button type="submit" class="btn">Ping Pong!</button>
       </form>
-
       <div id="result">
         <ul class = "results">
-
         </ul>
-
       </div>
-
-
     </div>
   </body>
 </html>
